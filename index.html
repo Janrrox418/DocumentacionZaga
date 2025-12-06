@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Documentación Interactiva</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo zaga.webp" alt="Logo de la empresa" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduccion">Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion1">Sección 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion2">Sección 2</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#seccion3">Sección 3</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#seccion4">Sección 4</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#seccion5">Sección 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion6">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container content-wrapper">
+        <section id="introduccion" class="py-5">
+            <h1 class="display-4">Manual de mercadeo SAP</h1>
+            <p class="lead">Este es un manual que indica los procesos realizados por el departamento de mercadeo para la captacion de un cliente o partner SAP</p>
+            <hr class="my-4">
+            <p>Este Manual Interactivo documenta, paso a paso, los procedimientos y flujos de trabajo clave ejecutados por el equipo de Marketing de nuestra consultora SAP para la captación de clientes y partners estratégicos</p>
+            <p>En esta seleccion encontraremos el paso a paso generalizado desde el primer contacto con un cliente hasta la delegacion de los coordinadores</p>
+            <!-- Botón para colapsar secciones -->
+            <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#secciones-colapsables" aria-expanded="true" aria-controls="secciones-colapsables">
+                Ocultar / Mostrar Secciones
+            </button>
+        </section>
+        
+        <!-- Este div envuelve las secciones para controlar su orden con CSS -->
+        <div id="contenedor-secciones">
+            <!-- Esta es la nueva sección que cambia de lugar -->
+            <section id="seccion-prioritaria" class="py-5">
+                <h2>Estrategias</h2>
+                <hr class="my-4">
+                <p>
+                    <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="collapse" data-bs-target="#estrategia-persona" aria-expanded="false" aria-controls="estrategia-persona">
+                        Persona
+                    </button>
+                    <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="collapse" data-bs-target="#estrategia-empresa" aria-expanded="false" aria-controls="estrategia-empresa">
+                        Empresa
+                    </button>
+                    <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#estrategia-empleo" aria-expanded="false" aria-controls="estrategia-empleo">
+                        Empleo
+                    </button>
+                </p>
+                <div class="collapse" id="estrategia-persona">
+                    <div class=" text-white mb-2">
+                        <ul>
+                            <li>Comenzamos desde LinkedIn ubicandonos en el filtro de personas.</li>
+                            <li>Luego buscamos la data de "Busqueda de personas".</li>
+                            <li>En la primera columna llamada tecnologia ubicamos el cargo de las personas que buscaremos.</li> 
+                        </ul>
+
+                            <p>-Ya que estamos partiendo de personas que tengan en su cargo la palabra SAP, solamente agregaremos empresas con las que esten trabajando SAP.</p>
+                        <ul>
+                            <li>Marcamos el pais donde se encuentra la persona en la seccion de pais.</li>
+                            <li>Pegamos el enlace del LinkedIn de la persona en la columna llamada perfil.</li> 
+                            <li>Buscamos en el perfil de LinkedIn de la persona las empresas en las que este trabajando con SAP.</li>
+                            <li>Marcamos en la seccion de empresa SAP el nombre de las empresas que aparezcan en el perfil de la persona en las que este trabajando con SAP.</li>
+                            <li>Marcamos en la seccion de LinkedIn los enlaces de LinkedIn de las empresas encontradas.</li>
+                            <li>Agregamos el rubro de las empresas encontradas diferenciandolas si son partner o cliente final(Ya que cada una tiene su propia casilla).</li>
+                            <li>Marcamos con una  ❌ si la empresa tiene SAP.</li>
+                            <li>Marcamos con su inicial si la empresa se encuentra en España (E), LATAM (L), y USA (U).</li>
+                        </ul>
+                        <p>-Copiamos el enlace del linkedIn de la empresa y lo pegamos en la data principal con CTRL + H para verficar el status de la empresa y revisar si se encuentra en BDC</p>
+                        <ul>
+                            <li>Marcamos si la empresa es intocable (Si esta en BDC) con una S, si no esta en intocable lo marcamos con una N.</li>
+                            <li>Definimos la busqueda que realizaremos en la empresa.</li>
+                        </ul>
+                        <p>-Encontramos cinco tipos de busqueda: .</p>
+                        <p>Al hacer clic en empleados nos encontramos con el primer tipo de busqueda que seria "En busca de personal". Al hacer clic en esa opcion podemos seleccionar entre todos los cargos buscados dentro de la empresa el que nosotros estemos solicitando</p>
+                        <p>Al hacer clic en empleados se despliega la lista de personas que se encuentran en la empresa en esta seleccion buscariamos de una en una las personas que se encuentran en la empresa revisando todas las paginas.</p>
+                        <p>Continuando con el paso anterior en vez de buscar en todas las paginas de las personas de la empresa realizaremos un filtro en la parte de arriba indicando el cargo que estamos buscando (En este caso seria Gerentes).</p>
+                        <p>Al igual que en el paso anterior realizaremos un filtro por cargo en el personal de la empresa pero esta vez buscaremos a las personas encargadas del reclutamiento (RRHH, Talent Adquisition, Recruting, Recursos Humanos).</p>
+                        <p>Y por ultimo realizariamos la busqueda de el cargo "Sales Navigator".</p>
+                        <ul>
+                            <li>Marcamos desde la columna K hasta la columna O el tipo de busqueda que realizaremos en la empresa.</li>
+                            <li>LLenamos el formulario web que se encuentra en la pagina del LinkedIn de la empresa con nuestros datos.</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="collapse" id="estrategia-empresa">
+                    <div class=" text-white mb-2">
+                        <ul>
+                            <li>Comenzamos desde LinkedIn ubicandonos en el filtro de Empresa.</li>
+                            <li>Realizamos la busqueda por ubicacion.</li>
+                            <li>Seleccionamos el pais que vamos a buscar.</li>
+                            <li>Al ingresar a las empresas que nos aparezcan primero copiamos el enlace de la misma y lo pegamos en la data principal para verificar el estatus en el que se encuentra.</li>
+                            <li>Revisamos si la empresa tiene SAP</li>
+                            <li>Realizamos al igual que en la estrategia de personas alguno de los cinco filtros (Pagina a Pagina, empleos SAP, Gerentes, Reclutadores y Sales Navigator).</li>
+                            <li>Si la empresa no se encuentra en la data la agregamos registrando cada uno de sus datos.</li>
+                            <li>Como ultimo paso llenamos el formulario de la empresa.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="estrategia-empleo">
+                    <div class="text-white mb-2">
+                        <ul>
+                            <li>Comenzamos desde LinkedIn ubicandonos en el filtro de Empleo.</li>
+                            <li>Marcamos el pais en el que deseamos hacer la busqueda.</li>
+                            <li>Marcamos la habilidad deseada (entre comillas).</li>
+                            <li>Seleccionamos en la fecha de publicacion el momento del cargo publicado.</li>
+                            <li>Marcamos en el filtro si tenemos mas especificaciones en la busqueda (nivel de experiencia, empresas, modalidad, tipo de empleo, sector, funcion laboral, cargo, cantidad de candidatos y compromisos).</li>
+                            <li>Entramos en la empresa con la solicitud y revisamos si es partner o cliente final</li>
+                            <li>Copiamos el enlace de la empresa y lo pegamos en la data principal para verificar su estatus</li>
+                            <li>Si la empresa no es intocable procedemos con los siguientes pasos.</li>
+                            <li>Si la empresa no se encuentra en la data la agregamos registrando cada uno de sus datos.</li>
+                            <li>Si la empresa ya esta registrada en la data procedemos con la busqueda en linkedIn.</li>
+                            <li>Si tiene anunciante le enviamos el siguiente mensaje: </li>
+                        </ul>
+                        <p>
+                            <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="collapse" data-bs-target="#Partner" aria-expanded="false" aria-controls="estrategia-persona">
+                                 Partner
+                            </button>
+                            <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="collapse" data-bs-target="#CF" aria-expanded="false" aria-controls="estrategia-persona">
+                                 Cliente final
+                            </button>
+                        </p>
+                    <div class="collapse" id="Partner">
+                        <div class=" text-white mb-2">
+                            <p>Saludos cordiales, vimos en LinkedIn que en @Empresa requieren perfiles SAP.
+                                Desde Zaga System Group compartimos referencias: https://drive.google.com/drive/folders/1jYjkL_M5jxDSIe_8YvY0yYtv-HbdYUnw?usp=drive_link
+                                    Ofrecemos tarifas especiales para PARTNER SAP hasta 30% menores al mercado global.
+                                </p>
+                        </div>
+                    </div>
+                        <div class="collapse" id="CF">
+                             <div class=" text-white mb-2">
+                                <p>Saludos, visualizamos en Linkedin que en @Empresa cuentan con solicitudes de Perfiles SAP
+                                    Desde Zaga System Group. Compartimos perfiles SAP de referencia:
+                                        https://drive.google.com/drive/folders/1jYjkL_M5jxDSIe_8YvY0yYtv-HbdYUnw?usp=drive_link
+                                            Ofrecemos tarifas hasta 30% menores al mercado global
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <lu>    
+                        <li>Si no tiene anunciante contactamos con las personas que aparezcan en la empresa en la seccion de empleados (Especificamente con las personas de recursos humanos).</li>
+                        <li>Estimado, represento a Zaga System Group, consultora venezolana con sede en España, Usa y experiencia en Latam.
+                            Podemos cotizar perfiles de consultores SAP sin ocupar costos, contamos con tarifas especiales 30% menores a las del mercado global</li>
+
+
+                    </lu>
+                </div>
+            </section>
+            
+            <div class="collapse show" id="secciones-colapsables">
+            <section id="seccion1" class="py-5">
+                <h1>Sección 1: Primer Contacto</h1>
+                <hr class="my-4">
+                <p>- Buscar la empresa por LinkedIn</p>
+                <p>- Verificar si la empresa tiene SAP</p>
+                <p>- Revisar si es partner o cliente final según su rubro</p>
+                <p>- Buscar en la Data si ya se encuentra la empresa y en que status esta</p>
+                <p>- Enviar un mensaje correspondiente ya se de partner o cliente final</p>
+                
+                <!-- Botones para abrir los modales -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPartner">
+                    Partner 1
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalClienteFinal">
+                    Cliente final 1
+                </button>
+            </section>
+
+            <section id="seccion2" class="py-5">
+                <h2>Sección 2: seguimiento</h2>
+                <hr class="my-4">
+                <p> -Si la empresa no esta en la data, agregarla</p>
+                <p> -Los datos para agregar serian: </p>
+                <ul>
+                    <li>Identificar el nombre del ejecutivo captador</li>
+                    <li>Identificar el nombre del ejecutivo en seguimiento (Si hay uno)</li>
+                    <li>Identificar algun comentario adicional sobre la empresa</li>
+                    <li>Identificar el estatus en el que se encuentra la empresa</li>
+                    <li>Colocar el nombre de la empresa</li>
+                    <li>Agregar el enlace de la empresa</li>
+                    <li>Seleccionar el pais en el que se encuentra la empresa</li>
+                    <li>Seleccionar el rubro de la empresa</li>
+                    <li>Seleccionar el tipo de busqueda que se aplico para mercadear la empresa</li>
+                    <li>Si se encuentra algun correo o numero de telefono de algun empleado de la empresa agregarlo</li>
+                </ul>
+                <p> -Enviar el segundo mensaje de seguimiento para las personas que conectaron en la empresa</p>
+
+                     <!-- Botones para abrir los modales -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPartner2">
+                    Partner 2
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalClienteFinal2">
+                    Cliente final 2
+                </button>
+            </section>
+
+             <section id="seccion3" class="py-5">
+                <h2>Sección 3:Seguimiento Avanzado </h2>
+                <hr class="my-4">
+                <p> -Se evalua la respuesta del cliente:</p>
+                <ul>
+                    <li>Si el cliente no ha respondido o solicita mas informacion se le envia el siguiente mensaje: </li>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMensaje">
+                    Mensaje 3
+                </button>
+                    <li>Si el cliente responde con una negacion se le envia el siguiente mensaje: </li>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMensaje2">
+                    Negacion
+                </button>
+                    <li>Si el cliente facilita su correo se le envia el siguiente mensaje: </li>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMensaje3">
+                    Correo
+                </button>
+                <li>Si el cliente solicita una reunion se le envia el siguiente mensaje: </li>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalReunion">
+                    Reunion
+                </button>
+                </ul>
+
+            </section>
+
+             <section id="seccion4" class="py-5">
+                <h2>Sección 4: Solicitud</h2>
+                <hr class="my-4">
+                <p> -Dependiendo de la respuesta del cliente colocariamos los siguientes mensajes: </p>
+                 <ul>
+                    <li>Si el cliente dice que su cargo no es adecuado para la solicitud se le envia el siguiente mensaje: </li>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMensaje4">
+                    Negacion por cargo
+                </button>
+                    <li>Si el cliente envia una solicitud de requerimiento o recuros se le envia el siguiente mensaje: </li>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMensaje5">
+                    Solicitud
+                </button>
+                    <li>Si el cliente en el paso anterior solicito una reunion continuamos con los siguientes pasos: </li>
+                 </ul>
+                 <p> -Enviarle a su correo el agendamiento por meet</p>
+                    <p> -Confirmar por correo su asistencia a la reunion en la fecha y hora pautada</p>
+                    <p> -Crear un agendamiento una hora antes con el director comercial y el CEO de la empresa para recordarles que en una hora tienen pautada la reunion</p>
+            </section>  
+
+             <section id="seccion5" class="py-5">
+                <h2>Sección 5: Cierre</h2>
+                <hr class="my-4">
+                <p> -Si el cliente solicitó algún recurso, requerimiento o ya se tuvo una reunion con ellos se deriva con el director comercial para que este lo asigne al coordinador que se encargara de el caso</p>
+                <p> -Si el cliente solicita un tiempo para continuar se crea un recordatoria en meet para el seguimiento en la fecha que proponga el cliente </p>
+            </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Partner 1 -->
+    <div class="modal fade" id="modalPartner" tabindex="-1" aria-labelledby="modalPartnerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPartnerLabel">Mensaje para Partner</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Saludos, somos Zaga System Group LLC, consultora IT especializada en SAP con más de 10 años de experiencia en Latam. Nos gustaría presentarles nuestra propuesta de colaboración, con tarifas especiales para partner y especialistas. ¿Podría facilitarnos su email para compartir la presentación?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cliente Final 1 -->
+    <div class="modal fade" id="modalClienteFinal" tabindex="-1" aria-labelledby="modalClienteFinalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalClienteFinalLabel">Mensaje para Cliente Final</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Saludos, somos Zaga System Group LLC, consultora IT especializada en SAP con más de 10 años de experiencia en Latam y en alianza con más de 50 partners IT ¿Le gustaría conocer nuestros servicios de soluciones / soporte en apoyo a los procesos de su industria en su localidad?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Partner 2 -->
+    <div class="modal fade" id="modalPartner2" tabindex="-1" aria-labelledby="modalPartnerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPartnerLabel">Mensaje para Partner</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Gracias por conectar estimado. Somos Zaga System Group LLC, consultora IT especializada en SAP con más de 10 años de experiencia en Latam. Nos gustaría presentarles nuestra propuesta de colaboración, con tarifas especiales para partners y consultores especialistas. 
+                    ¿Podría facilitarnos su email para compartir la presentación?
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal Cliente Final 2 -->
+    <div class="modal fade" id="modalClienteFinal2" tabindex="-1" aria-labelledby="modalClienteFinalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalClienteFinalLabel">Mensaje para Cliente Final</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Gracias por conectar estimado. Somos Zaga System Group LLC, consultora IT especializada en SAP con más de 10 años de experiencia en Latam y en alianza con más de 50 partners IT.
+                    ¿Le gustaría conocer nuestros servicios de soluciones / soporte en apoyo a los procesos de su industria en su localidad?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mensaje -->
+    <div class="modal fade" id="modalMensaje" tabindex="-1" aria-labelledby="modalPartnerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPartnerLabel">Mensaje para Partner y cliente</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Saludos @3Persona, un gusto saludarle.
+                    Somos conscientes de que el tiempo es limitado y más aún con su nivel de responsabilidad, por lo que nos colocamos a su disposición.
+                    ¿Cuenta con algún requerimiento o necesidad de recurso SAP que podamos apoyarle a cotizar sin costo para su evaluación?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mensaje2 -->
+    <div class="modal fade" id="modalMensaje2" tabindex="-1" aria-labelledby="modalPartnerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPartnerLabel">Mensaje para Partner y cliente</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Gracias por su contacto. Nos mantenemos a su disposición ante futuras necesidades de requerimientos o recursos SAP con tarifas competitivas y metodologías adecuadas
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mensaje3 -->
+    <div class="modal fade" id="modalMensaje3" tabindex="-1" aria-labelledby="modalPartnerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPartnerLabel">Mensaje para Partner y cliente</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Muchas gracias estimado @persona, nuestra especialista @Ejecutivo le ha enviado nuestra presentación corporativa, quedamos atentos a su recepción.
+                    Adicional, ¿Cuenta con algún requerimiento o necesidad de recurso SAP que podamos apoyarle a cotizar sin costo para su evaluación?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Reunion-->
+    <div class="modal fade" id="modalReunion" tabindex="-1" aria-labelledby="modalPartnerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPartnerLabel">Reunion</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Muchas gracias por su disposición estimado @persona, cuenta con disponibilidad para (Sugerir dos fechas y horarios disponibles) para agendar una reunión en la cual podamos presentarle nuestra propuesta comercial.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mensaje5-->
+    <div class="modal fade" id="modalMensaje4" tabindex="-1" aria-labelledby="modalPartnerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPartnerLabel">Negacion</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Gracias por esta valiosa interacción estimado. Si está dentro de su alcance facilítenos un correo de su equipo IT para poder escalar nuestra presentación de servicios.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mensaje5-->
+    <div class="modal fade" id="modalMensaje5" tabindex="-1" aria-labelledby="modalPartnerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPartnerLabel">Solicitud</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Con relación a los perfiles solicitados podría indicarme:
+                    1. ¿Se requiere en modalidad por horas o mensual?
+                    2. Se requiere para soporte o proyecto/implementacion?
+                    3. ¿La atención puede ser 100% remoto y en español?
+                    4. ¿De cuál país se requiere conocimiento de nómina?
+                    5. ¿A cuál correo podemos hacer llegar las hojas de vida?
+                    6. ¿Cuáles serían los módulos o especialidades requeridos?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

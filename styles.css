@@ -1,0 +1,52 @@
+/*  desplazamiento */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos de la página */
+body {
+    /* fondo azul oscuro */
+    background-color: #000080; 
+    /* Color de texto claro */
+    color: #c9d1d9;
+}
+
+/* Estilos para la barra de navegación */
+.navbar.bg-dark {
+    /* Un azul un poco más oscuro para la barra */
+    background-color: #396eca !important;
+    border-bottom: 1px solid #30363d;
+}
+
+/* Espacio superior para que el contenido no quede oculto debajo de la barra de navegación fija */
+.content-wrapper {
+    padding-top: 70px; 
+}
+
+/* Estilos para los bloques de código de ejemplo */
+pre {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+button[data-bs-target="#secciones-colapsables"] {
+    margin-bottom: 1rem;
+}
+
+/* Contenedor Flex para reordenar las secciones */
+#contenedor-secciones {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Orden inicial de la sección prioritaria */
+#seccion-prioritaria {
+    order: 1; /* Se muestra después de la introducción */
+}
+
+/* Cuando las secciones están visibles, la sección prioritaria se va al final */
+#secciones-colapsables.show + #seccion-prioritaria {
+    order: 3; /* Se mueve al final de todo */
+}
